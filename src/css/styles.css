@@ -10,7 +10,15 @@
 @import url('./container.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./sale.css');
-@import url('./about-us.css');
-@import url('./footer.css');
+@import url('./partials/header.css');
+
+@import url('./partials/hero.css');
+@import url('./partials/planet-care.css');
+@import url('./partials/advantages.css');
+@import url('./partials/catalog.css');
+@import url('./partials/gallery.css');
+@import url('./partials/feedback.css');
+@import url('./partials/support.css');
+
+@import url('./partials/footer.css');
+@import url('./partials/burger.css');
