@@ -12,6 +12,7 @@ body {
   font-family: var(--main-ff), sans-serif;
   font-weight: 400;
   color: #030a06;
+  background-color: #ebf8ed;
 }
 
 main {
