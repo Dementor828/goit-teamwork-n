@@ -1,1 +1,71 @@
+/* section 4 Assortment */
+.conteiner-section-4-assortment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1320px;
+}
 
+.title-2 {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.list-bags {
+  display: grid;
+  grid-template-columns: repeat(4, 310px);
+  justify-content: center;
+  gap: 64px 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: start;
+}
+
+.item-bag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  margin-bottom: 16px;
+  min-height: 556px;
+}
+
+.photos-bags {
+  width: 310px;
+  height: 372px;
+  object-fit: cover;
+}
+
+.subtitle-3 {
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.bag-description {
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.price-bag {
+  margin: 0;
+  padding: 0;
+}
+
+.buy-button {
+  padding: 0;
+  display: block;
+  width: 310px;
+  height: 40px;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+}
