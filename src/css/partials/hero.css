@@ -1,11 +1,6 @@
-.hero {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
 .hero-title {
   max-width: 288px;
-  font-family: var(--secondary-ff), cursive;
+  font-family: var(--secondary-ff), sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
@@ -53,10 +48,6 @@
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   .hero-content {
     margin-bottom: 20px;
     display: flex;
@@ -83,10 +74,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   .hero-title {
     max-width: 640px;
     font-weight: 700;
