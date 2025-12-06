@@ -77,7 +77,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #030a06;
-  background: #ffffff;
+  background-color: transparent;
   border: 1px solid #030a06;
   transition: all 0.2s ease;
 }
