@@ -8,7 +8,7 @@
     height: 64px;
     max-width: 100%;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
     .header-container{
         height: 72px;
     }
@@ -29,7 +29,7 @@
 }
 
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
     .burger-button{
         display: none;
     }
@@ -42,7 +42,7 @@ address{
 .nav-list, .address{
     display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
     .nav-list,
     .address{
         display: flex;
@@ -73,7 +73,7 @@ address{
   visibility: hidden;
   pointer-events: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
     .menu{
         display: none;
     }
@@ -147,7 +147,7 @@ address{
 
 
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
  
  .nav{
     display: flex;
