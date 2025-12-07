@@ -1,1 +1,153 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #75D281;
+    height: 64px;
+}
+@media screen and (min-width: 1440px) {
+    .header-container{
+        height: 72px;
+    }
+}
 
+
+.logo-icon-link,
+.burger-button-icon,
+.menu-close-icon{
+    margin-top: 16px;
+}
+.burger-button{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .burger-button{
+        display: none;
+    }
+}
+
+.nav-list, .address{
+    display: none;
+}
+@media screen and (min-width: 1440px) {
+    .nav-list,
+    .address{
+        display: flex;
+    }
+    .nav{
+        gap: 32px;
+    }
+    .nav-list,
+    .address-list{
+        gap: 10px;
+    }
+    .address{
+        gap: 16px;
+    }
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #75D281;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@media screen and (min-width: 1440px) {
+    .menu{
+        display: none;
+    }
+}
+.menu.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; 
+}
+
+.menu-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu-nav{
+    padding-top: 32px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    gap: 10px;
+}
+@media screen and (min-width: 768px) {
+    .menu-nav{
+        padding: 32px;
+    }
+}
+
+.menu-address{
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+    .menu-address{
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+        gap: 16px;
+    }
+}
+.menu-logo-button-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-close-button{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-nav-item-link,
+.menu-address-item-link{
+  font-family: var(--main-ff), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #030a06;
+}
+.menu-nav-list,
+.menu-address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+ 
+ .nav{
+    display: flex;
+    justify-content: space-between;
+ }
+ .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .address{
+    display: flex;
+ }
+ .address-list{
+    display: flex;
+ }
+
+}
