@@ -1,0 +1,25 @@
+.support-title {
+    display: block;
+    max-width: 288px;
+    font-family: var(--secondary-ff), sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+}
+
+.button-support {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding-block: 12px;
+    padding-inline: 24px;
+    width: 288px;
+    height: 50px;
+    background: #030a06;
+}
