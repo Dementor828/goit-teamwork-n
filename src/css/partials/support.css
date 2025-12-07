@@ -64,6 +64,10 @@
     color: #030a06;
 }
 
+.text-support-field:focus::placeholder {
+    opacity: 0;
+}
+
 .text-support-field:focus {
     color: #030a06;
 }
@@ -120,6 +124,10 @@
     color: #030a06;
 }
 
+.comment-textarea:focus::placeholder {
+    opacity: 0;
+}
+
 .comment-textarea:focus {
     color: #030a06;
 }
@@ -168,7 +176,7 @@
 /* img */
 
 .img-support {
-    background-image: url("../img/support/support-m.jpg");
+    background-image: url("/img/support/support-m.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,7 +186,13 @@
     height: 428px;
 }
 
-/* Styles for Tablet devices */
+@media only screen and (min-resolution: 192dpi) {
+    .img-support {
+            background-image: url("/img/support/support-m@2x.jpg");
+    }
+}
+
+/* styles for tablet devices */
 @media only screen and (min-width: 768px) {
     .support-title {
         max-width: 468px;
@@ -189,11 +203,17 @@
     }
 
     .img-support {
-        background-image: url("../img/support/support-t.jpg");
+        background-image: url("/img/support/support-t.jpg");
         }
 }
 
-/* Styles for Desktop devices */
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .img-support {
+            background-image: url("/img/support/support-t@2x.jpg");
+        }
+}
+
+/* styles for desktop devices */
 @media only screen and (min-width: 1440px) {
     .container-support {
         display: flex;
@@ -216,8 +236,14 @@
     }
 
     .img-support {
-            background-image: url("../img/support/support-d.jpg");
+            background-image: url("/img/support/support-d.jpg");
             width: 644px;
             height: 767px;
+        }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .img-support {
+            background-image: url("/img/support/support-d@2x.jpg");
         }
 }
