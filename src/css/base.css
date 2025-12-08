@@ -6,8 +6,6 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
   font-family: var(--main-ff), sans-serif;
   font-weight: 400;
