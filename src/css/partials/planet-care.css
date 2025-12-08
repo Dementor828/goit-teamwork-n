@@ -1,5 +1,5 @@
 .planet-care {
-  padding: 64px 16px;
+  padding: 64px 0;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
     url(../img/planet-care/planet-care-m.jpg);
@@ -60,10 +60,6 @@
       url(../img/planet-care/planet-care-t.jpg);
   }
 
-  .planet-care .container {
-    padding: 80px auto;
-  }
-
   .planet-care-title {
     margin-bottom: 16px;
   }
@@ -93,8 +89,7 @@
   }
 
   .planet-care .container {
-    padding-top: 112px;
-    padding-bottom: 94px;
+    padding: 112px 0 94px 0;
   }
 
   .planet-care-subtitle {
