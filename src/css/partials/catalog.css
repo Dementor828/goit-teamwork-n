@@ -1,1 +1,129 @@
+.catalog-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
 
+.list-bags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* MOBIL */
+.catalog-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.list-bags {
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item-bag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.photos-bags {
+  width: 100%;
+  margin-bottom: 16px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.bag-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.bag-description {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  height: 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.price-bag {
+  margin-bottom: 16px;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 7px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #030a06;
+  background-color: transparent;
+  border: 1px solid #030a06;
+  transition: all 0.2s ease;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .item-bag {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .list-bags {
+    gap: 48px 24px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+  .catalog-title {
+    font-size: 48px;
+  }
+
+  .list-bags {
+    gap: 64px 24px;
+  }
+
+  .item-bag {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .buy-button:hover,
+  .buy-button:focus {
+    border: 1px solid #030a06;
+    color: #030a06;
+    opacity: 0.5;
+  }
+
+  .buy-button:active {
+    border: 1px solid #113916;
+    color: #113916;
+    opacity: 0.6;
+  }
+
+  .buy-button:disabled {
+    border: 1px solid #030a06;
+    color: #030a06;
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+}
