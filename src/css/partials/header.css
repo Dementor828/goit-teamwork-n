@@ -1,168 +1,134 @@
-
-
-.header-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #75D281;
-    height: 64px;
-    max-width: 100%;
-}
-@media screen and (min-width: 1440px) {
-    .header-container{
-        height: 72px;
-    }
+.header {
+  background-color: #75D281;
 }
 
-.logo-nav-container{
-    display: flex;
-    align-items: center;
-    gap: 120px;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 20px;
 }
 
+address {
+  font-style: normal;
+}
 
 .burger-button{
   padding: 0;
   border: none;
-  background-color: transparent;
-
+  background: transparent;
 }
 
-
-@media screen and (min-width: 1440px) {
-    .burger-button{
-        display: none;
-    }
+.menu-close-button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 16px;
+  right: 20px;
 }
 
-address{
-    font-style: normal;
+/* hide desktop nav on mobile */
+.nav-list,
+.address-list {
+  display: none;
 }
 
-.nav-list, .address{
-    display: none;
-}
-@media screen and (min-width: 1440px) {
-    .nav-list,
-    .address{
-        display: flex;
-    }
-    .nav{
-        gap: 32px;
-    }
-    .nav-list,
-    .address-list{
-        gap: 10px;
-    }
-    .address{
-        gap: 16px;
-    }
-}
-
-
-/* menu */
-
-.menu{
+/* mobile menu hidden */
+.menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: #75D281;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-@media screen and (min-width: 1440px) {
-    .menu{
-        display: none;
-    }
-}
-.menu.is-open{
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto; 
+  transition: opacity 250ms ease;
 }
 
-.menu-container{
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-container {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.menu-nav{
-    padding-top: 32px;
-    padding-right: 20px;
-    padding-bottom: 32px;
-    padding-left: 20px;
-    margin-bottom: 32px;
-    gap: 10px;
-}
-@media screen and (min-width: 768px) {
-    .menu-nav{
-        padding: 32px;
-        margin-bottom: 0;
-    }
+
+.logo-icon-link {
+  display: block;
+  padding: 14px 20px;
 }
 
-.menu-address{
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
+.menu-nav {
+  padding: 32px 20px;
+  margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
-    .menu-address{
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 32px;
-        gap: 16px;
-    }
-}
-.menu-logo-button-container{
-    display: flex;
-    justify-content: space-between;
+.menu-address {
+  padding: 32px 16px 32px 16px;
 }
 
-.menu-close-button{
-  padding: 0;
-  border: none;
-  background-color: transparent;
+.menu-nav-list{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .menu-nav-item-link,
-.menu-address-item-link{
-  font-family: var(--main-ff), sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.menu-address-item-link {
   font-size: 16px;
-  line-height: 25.6px;
+  line-height: 1.6;
   color: #030a06;
 }
-.menu-nav-list,
-.menu-address-list{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header-container {
+    padding: 0 32px;
+  }
+
+  .logo-icon-link {
+    padding-left: 32px;
+  }
+
+  .menu-nav {
+    padding: 32px;
+    margin-bottom: 0;
+  }
+
+  .menu-address {
+    padding: 32px 32px 0 32px;
+  }
 }
 
+/* Desktop */
+@media (min-width: 1440px) {
+  .header-container {
+    padding: 0 64px;
+    height: 72px;
+  }
 
+  .burger-button,
+  .menu {
+    display: none;
+  }
 
-@media screen and (min-width: 1440px) {
- 
- .nav{
+  .nav-list,
+  .address-list {
     display: flex;
-    justify-content: space-between;
- }
- .nav-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .address{
-    display: flex;
- }
- .address-list{
-    display: flex;
- }
+    gap: 32px;
+  }
 
+  .address-list {
+    gap: 16px;
+  }
 }

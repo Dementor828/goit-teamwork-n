@@ -1,96 +1,68 @@
-<header>
+<header class="header">
     <div class="container header-container">
-        <nav class="nav">
-            <div class="logo-nav-container">
-                <a class="logo-icon-link" href="">
-                    <img src="/img/svg/logo.svg" alt="">
-                </a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Переваги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Асортимент</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Відгуки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Контакти</a>
-                    </li>
-                </ul>
-            </div>
 
+        <a class="header-logo-icon-link" href="/">
+            <img src="/img/svg/logo.svg" alt="EcoTote logo">
+        </a>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#advantages">Переваги</a></li>
+                <li><a href="#catalog">Асортимент</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
         </nav>
+
         <address class="address">
             <ul class="address-list">
-                <li class="address-item">
-                    <a href="tel:+380999091122">+380999091122</a>
-                </li>
-                <li class="address-item">
-                    <a href="mailto:hello@ecotote.com">hello@ecotote.com</a>
-                </li>
+                <li><a href="tel:+380999091122">+380999091122</a></li>
+                <li><a href="mailto:hello@ecotote.com">hello@ecotote.com</a></li>
             </ul>
         </address>
-        <button class="burger-button">
-            <svg class=" icons burger-button-icon" width="32" height="32">
+
+        <button class="burger-button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icons burger-button-icon" width="32" height="32">
                 <use href="/img/svg/icons.svg#icon-menu"></use>
             </svg>
         </button>
 
-<!--menu-->
+        <!-- Mobile menu -->
+        <div class="menu is-open"> <!-- is-open -->
+            <div class="menu-container">
 
-        <div class="menu">
-            <div class="menu-container ">
-                <div class="menu-logo-button-container">
-                    <a class="logo-icon-link" href="">
-                        <img src="/img/svg/logo.svg" alt="">
-                    </a>
-                    <button class="menu-close-button">
-                        <svg class="icons menu-close-icon" width="32" height="32">
-                            <use href="/img/svg/icons.svg#icon-x"></use>
-                        </svg>
-                    </button>
-                </div>
+                <button class="menu-close-button">
+                    <svg class="icons menu-close-icon" width="32" height="32">
+                        <use href="/img/svg/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+
+                <a class="logo-icon-link" href="/">
+                    <img src="/img/svg/logo.svg" alt="EcoTote logo">
+                </a>
+
                 <nav class="menu-nav">
                     <ul class="menu-nav-list">
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Про нас</a>
-                        </li>
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Переваги</a>
-                        </li>
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Асортимент</a>
-                        </li>
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Галерея</a>
-                        </li>
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Відгуки</a>
-                        </li>
-                        <li class="menu-nav-item">
-                            <a class="menu-nav-item-link" href="">Контакти</a>
-                        </li>
+                        <li><a href="#about" class="menu-nav-item-link">Про нас</a></li>
+                        <li><a href="#advantages" class="menu-nav-item-link">Переваги</a></li>
+                        <li><a href="#catalog" class="menu-nav-item-link">Асортимент</a></li>
+                        <li><a href="#gallery" class="menu-nav-item-link">Галерея</a></li>
+                        <li><a href="#feedback" class="menu-nav-item-link">Відгуки</a></li>
+                        <li><a href="#contacts" class="menu-nav-item-link">Контакти</a></li>
                     </ul>
                 </nav>
+
                 <address class="menu-address">
                     <ul class="menu-address-list">
-                        <li class="menu-address-item">
-                            <a class="menu-address-item-link" href="">+380999091122</a>
-                        </li>
-                        <li class="menu-address-item">
-                            <a class="menu-address-item-link" href="">hello@ecotote.com</a>
-                        </li>
+                        <li><a href="tel:+380999091122" class="menu-address-item-link">+380999091122</a></li>
+                        <li><a href="mailto:hello@ecotote.com" class="menu-address-item-link">hello@ecotote.com</a></li>
                     </ul>
                 </address>
+
             </div>
         </div>
+
     </div>
 </header>
