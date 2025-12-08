@@ -1,8 +1,7 @@
 .planet-care {
   padding: 64px 0;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-    url(/img/planet-care/planet-care-m.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/planet-care/planet-care-m.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -26,7 +25,7 @@
 }
 
 .planet-care-subtitle {
-  font-family: var(--secondary-ff);
+  font-family: var(--secondary-ff), sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -48,16 +47,15 @@
 
 @media (min-resolution: 192dpi) {
   .planet-care {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-      url(/img/planet-care/planet-care-m@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/planet-care/planet-care-m@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .planet-care {
-    padding: 80px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-      url(/img/planet-care/planet-care-t.jpg);
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/planet-care/planet-care-t.jpg");
   }
 
   .planet-care-title {
@@ -77,18 +75,18 @@
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .planet-care {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-      url(/img/planet-care/planet-care-t@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/planet-care/planet-care-t@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1440px) {
   .planet-care {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-      url(/img/planet-care/planet-care-d.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/planet-care/planet-care-d.jpg");
   }
 
-  .planet-care .container {
+  .planet-care {
     padding: 112px 0 94px 0;
   }
 
@@ -99,7 +97,7 @@
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .planet-care {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-      url(/img/planet-care/planet-care-d@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/img/planet-care/planet-care-d@2x.jpg");
   }
 }
