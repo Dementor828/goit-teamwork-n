@@ -1,6 +1,3 @@
-/* section 4 Assortment */
-/* БАЗОВІ СТИЛІ */
-
 .catalog-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
@@ -47,16 +44,19 @@
 }
 
 .bag-name {
-  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .bag-description {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   height: 40px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .price-bag {
@@ -85,7 +85,7 @@
 /* TABLET */
 @media (min-width: 768px) {
   .item-bag {
-    width: calc((100% - 40px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .list-bags {
@@ -104,11 +104,7 @@
   }
 
   .item-bag {
-    width: calc((100% - 120px) / 4);
-  }
-
-  .bag-name {
-    font-size: 20px;
+    width: calc((100% - 72px) / 4);
   }
 
   .buy-button:hover,
