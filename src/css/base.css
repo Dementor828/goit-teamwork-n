@@ -3,6 +3,10 @@
   --secondary-ff: 'Comfortaa';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
