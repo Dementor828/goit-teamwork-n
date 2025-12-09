@@ -1,68 +1,85 @@
 <header class="header">
-    <div class="container header-container">
+  <div class="container header-container">
+    <a class="header-logo-icon-link" href="/">
+      <img src="/img/svg/logo.svg" alt="EcoTote logo" />
+    </a>
 
-        <a class="header-logo-icon-link" href="/">
-            <img src="/img/svg/logo.svg" alt="EcoTote logo">
-        </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a class="link-nav current" href="#about">Про нас</a></li>
+        <li><a class="link-nav current" href="#advantages">Переваги</a></li>
+        <li><a class="link-nav current" href="#catalog">Асортимент</a></li>
+        <li><a class="link-nav current" href="#gallery">Галерея</a></li>
+        <li><a class="link-nav current" href="#reviews">Відгуки</a></li>
+        <li><a class="link-nav current" href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#advantages">Переваги</a></li>
-                <li><a href="#catalog">Асортимент</a></li>
-                <li><a href="#gallery">Галерея</a></li>
-                <li><a href="#reviews">Відгуки</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
-        </nav>
+    <address class="address">
+      <ul class="address-list">
+        <li>
+          <a class="address-link-header" href="tel:+380999091122"
+            >+38 (099) 909 11 22</a
+          >
+        </li>
+        <li>
+          <a class="address-link-header" href="mailto:hello@ecotote.com"
+            >hello@ecotote.com</a
+          >
+        </li>
+      </ul>
+    </address>
 
-        <address class="address">
-            <ul class="address-list">
-                <li><a href="tel:+380999091122">+380999091122</a></li>
-                <li><a href="mailto:hello@ecotote.com">hello@ecotote.com</a></li>
-            </ul>
-        </address>
+    <button class="burger-button" aria-expanded="false">
+      <svg class="icons burger-button-icon" width="32" height="32">
+        <use href="/img/svg/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
 
-        <button class="burger-button" aria-expanded="false">
-            <svg class="icons burger-button-icon" width="32" height="32">
-                <use href="/img/svg/icons.svg#icon-menu"></use>
-            </svg>
+    <!-- Mobile menu -->
+    <div class="menu">
+      <!-- is-open -->
+      <div class="menu-container">
+        <button class="menu-close-button">
+          <svg class="icons menu-close-icon" width="32" height="32">
+            <use href="/img/svg/icons.svg#icon-x"></use>
+          </svg>
         </button>
 
-        <!-- Mobile menu -->
-        <div class="menu"> <!-- is-open -->
-            <div class="menu-container">
+        <a class="logo-icon-link" href="/">
+          <img src="/img/svg/logo.svg" alt="EcoTote logo" />
+        </a>
 
-                <button class="menu-close-button">
-                    <svg class="icons menu-close-icon" width="32" height="32">
-                        <use href="/img/svg/icons.svg#icon-x"></use>
-                    </svg>
-                </button>
+        <nav class="menu-nav">
+          <ul class="menu-nav-list">
+            <li><a href="#about" class="menu-nav-item-link">Про нас</a></li>
+            <li>
+              <a href="#advantages" class="menu-nav-item-link">Переваги</a>
+            </li>
+            <li>
+              <a href="#catalog" class="menu-nav-item-link">Асортимент</a>
+            </li>
+            <li><a href="#gallery" class="menu-nav-item-link">Галерея</a></li>
+            <li><a href="#feedback" class="menu-nav-item-link">Відгуки</a></li>
+            <li><a href="#contacts" class="menu-nav-item-link">Контакти</a></li>
+          </ul>
+        </nav>
 
-                <a class="logo-icon-link" href="/">
-                    <img src="/img/svg/logo.svg" alt="EcoTote logo">
-                </a>
-
-                <nav class="menu-nav">
-                    <ul class="menu-nav-list">
-                        <li><a href="#about" class="menu-nav-item-link">Про нас</a></li>
-                        <li><a href="#advantages" class="menu-nav-item-link">Переваги</a></li>
-                        <li><a href="#catalog" class="menu-nav-item-link">Асортимент</a></li>
-                        <li><a href="#gallery" class="menu-nav-item-link">Галерея</a></li>
-                        <li><a href="#feedback" class="menu-nav-item-link">Відгуки</a></li>
-                        <li><a href="#contacts" class="menu-nav-item-link">Контакти</a></li>
-                    </ul>
-                </nav>
-
-                <address class="menu-address">
-                    <ul class="menu-address-list">
-                        <li><a href="tel:+380999091122" class="menu-address-item-link">+380999091122</a></li>
-                        <li><a href="mailto:hello@ecotote.com" class="menu-address-item-link">hello@ecotote.com</a></li>
-                    </ul>
-                </address>
-
-            </div>
-        </div>
-
+        <address class="menu-address">
+          <ul class="menu-address-list">
+            <li>
+              <a href="tel:+380999091122" class="menu-address-item-link"
+                >+380999091122</a
+              >
+            </li>
+            <li>
+              <a href="mailto:hello@ecotote.com" class="menu-address-item-link"
+                >hello@ecotote.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </div>
+  </div>
 </header>

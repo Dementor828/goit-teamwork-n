@@ -14,7 +14,7 @@ address {
   font-style: normal;
 }
 
-.burger-button{
+.burger-button {
   padding: 0;
   border: none;
   background: transparent;
@@ -67,11 +67,12 @@ address {
   padding: 32px 20px;
   margin-bottom: 32px;
 }
+
 .menu-address {
   padding: 32px 16px 32px 16px;
 }
 
-.menu-nav-list{
+.menu-nav-list {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -108,6 +109,36 @@ address {
   .menu-address {
     padding: 32px 32px 0 32px;
   }
+
+  .link-nav.current:hover,
+  .link-nav.current:focus {
+    position: relative;
+  }
+  
+  .link-nav.current:hover::after,
+  .link-nav.current:focus::after {
+    content: '';
+  
+    position: absolute;
+    left: 0;
+    bottom: -27px;
+  
+    width: 100%;
+    height: 1px;
+  
+    background-color: #030a06;
+  }
+
+  .address-link-header {
+    transition: opacity 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link-header:hover,
+  .address-link-header:focus {
+    opacity: 0.5;
+  }
+
 }
 
 /* Desktop */
